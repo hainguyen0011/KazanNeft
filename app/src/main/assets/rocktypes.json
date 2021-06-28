@@ -1,0 +1,18 @@
+{
+  "rocktypes": [
+    { "ID": "1", "Name": "Argillite", "BackgroundColor": "#E52B50" },
+    { "ID": "2", "Name": "Breccia", "BackgroundColor": "#FFBF00" },
+    { "ID": "3", "Name": "Chalk", "BackgroundColor": "#9966CC" },
+    { "ID": "4", "Name": "Chert", "BackgroundColor": "#FBCEB1" },
+    { "ID": "5", "Name": "Coal", "BackgroundColor": "#7FFFD4" },
+    { "ID": "6", "Name": "Conglomerate", "BackgroundColor": "#007FFF" },
+    { "ID": "7", "Name": "Dolomite", "BackgroundColor": "#0095B6" },
+    { "ID": "8", "Name": "Limestone", "BackgroundColor": "#800020" },
+    { "ID": "9", "Name": "Marl", "BackgroundColor": "#DE3163" },
+    { "ID": "10", "Name": "Mudstone", "BackgroundColor": "#F7E7CE" },
+    { "ID": "11", "Name": "Sandstone", "BackgroundColor": "#7FFF00" },
+    { "ID": "12", "Name": "Shale", "BackgroundColor": "#C8A2C8" },
+    { "ID": "13", "Name": "Tufa", "BackgroundColor": "#BFFF00" },
+    { "ID": "14", "Name": "Wackestone", "BackgroundColor": "#FFFF00" }
+  ]
+}

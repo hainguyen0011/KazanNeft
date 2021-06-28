@@ -1,0 +1,6 @@
+{
+  "welltypes": [
+    { "ID": "1", "Name": "Well" },
+    { "ID": "2", "Name": "Section" }
+  ]
+}

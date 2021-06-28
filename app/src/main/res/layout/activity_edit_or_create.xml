@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditOrCreateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Well information"
+        app:titleTextColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/back_button"
+        android:textAllCaps="false"
+        android:background="@drawable/borderless_button"
+        android:textColor="@android:color/holo_orange_light"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/detail_well_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtDepth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/detail_depth"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtCapacity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/detail_capacity"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDepth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtDepth"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtRockLayers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/detail_rocklayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtDepth"
+        app:layout_constraintTop_toBottomOf="@+id/txtDepth"
+        android:importantForAutofill="no" />
+
+    <Spinner
+        android:id="@+id/spinnerLayer"
+        android:layout_width="285dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/txtRockLayers"
+        app:layout_constraintTop_toBottomOf="@+id/txtRockLayers" />
+
+    <EditText
+        android:id="@+id/txtFrom"
+        android:layout_width="130dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/detail_from"
+        app:layout_constraintStart_toStartOf="@+id/spinnerLayer"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerLayer"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/txtTo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:hint="@string/detail_to"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtFrom"
+        app:layout_constraintStart_toEndOf="@+id/txtFrom"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnAddLayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/borderless_button"
+        android:text="@string/addlayer_text"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTo"
+        app:layout_constraintStart_toEndOf="@+id/txtTo" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/submit_text"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listLayers"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

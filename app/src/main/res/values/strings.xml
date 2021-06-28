@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KazanNeft</string>
+    <string name="add_float_button">Add Well</string>
+    <string name="edit_button">Edit</string>
+    <string name="well_name">Well Name:</string>
+    <string name="textview"></string>
+    <string name="well_capacity">Well Capacity:</string>
+    <string name="back_button">Back</string>
+    <string name="detail_well_name">Well Name</string>
+    <string name="detail_depth">Depth of Gas or Oil Extraction</string>
+    <string name="detail_capacity">Well Capacity</string>
+    <string name="detail_rocklayer">Rock Layers</string>
+    <string name="detail_from">From Depth</string>
+    <string name="detail_to">To Depth</string>
+    <string name="addlayer_text">Add Layer</string>
+    <string name="submit_text">Submit</string>
+</resources>

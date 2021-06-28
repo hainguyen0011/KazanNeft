@@ -1,0 +1,25 @@
+{
+  "wells": [
+    {
+      "ID": "1",
+      "WellTypeID": "1",
+      "WellName": "Yolka #12 ",
+      "GasOilDepth": "4500",
+      "Capacity": "980000000"
+    },
+    {
+      "ID": "2",
+      "WellTypeID": "1",
+      "WellName": "Kazan  #12",
+      "GasOilDepth": "4230",
+      "Capacity": "1080000000"
+    },
+    {
+      "ID": "3",
+      "WellTypeID": "1",
+      "WellName": "Kazan  #13",
+      "GasOilDepth": "4830",
+      "Capacity": "780000000"
+    }
+  ]
+}
